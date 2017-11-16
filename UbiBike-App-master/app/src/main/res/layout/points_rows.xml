@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayout">
+
+        <View
+            android:id="@+id/dummySpace"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Ivo Pires"
+            android:id="@+id/userID"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/userPoints"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userPoints"
+            android:singleLine="true"
+            android:textColor="#060000"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="10dp"
+            android:paddingTop="7dp"
+            android:layout_toRightOf="@+id/dummySpace"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendPointsImg"
+            android:src="@drawable/ic_send_points"
+            android:background="#00ffffff"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/userPoints"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp" />
+
+        <View android:background="#bdbdbd"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical ="true"
+            android:layout_below="@id/userID"/>
+    </RelativeLayout>
+
+</TableRow>
